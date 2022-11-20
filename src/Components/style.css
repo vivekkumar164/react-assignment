@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #969592;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.leftPanel,
+.rightPanel {
+    flex-basis: 50%;
+}
+
+.leftPanel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 2rem;
+}
+
+.rightPanel {
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+
+
+}
+
+.rightPanel h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #9a87df;
+
+}
+
+.rightPanel h3,
+h2:first-letter {
+    text-transform: uppercase;
+}
+
+.rightPanel img {
+    margin: 1rem;
+    height: 180px;
+
+
+}
+
+.image:hover {
+    transform: rotateY(45deg);
+    animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotateY(45deg);
+    }
+
+    to {
+        transform: rotateY(225deg);
+    }
+}
+
+.abilities {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.abilities .group {
+    background-color: #6c706d;
+    color: white;
+    padding: 0.5rem;
+    font-size: 10px;
+    border-radius: 8px;
+}
+
+.base-state {
+    margin-top: 2rem;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* card component  begins*/
+
+.card {
+    width: 300px;
+    background-color: #ecf1f3;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* card component  ends */
+
+/* navbar begins */
+nav {
+    background-color: rgb(103, 110, 110);
+    padding: 1%;
+    text-align: center;
+    font-weight: bolder;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav .input{
+    margin-right: 5%;
+    border-radius: 10%;
+    display: flex;
+}
+
+nav input{
+    margin-right: 5%;
+    outline: none;
+    border: none;
+    height: 100%;
+    
+}
+
+nav button{
+    border-radius: 10%;
+    outline: none;
+    border: none;
+    
+}
+
+/* navbar ends */
