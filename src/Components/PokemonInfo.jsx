@@ -13,7 +13,8 @@ const PokemonInfo = ({ data }) => {
                             <div className="image">
                             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${data.id}.svg`} alt="" />
                             </div>
-                            
+
+                            <div className="about">
                             <div className="abilities">
                             <h2 >Abilities</h2>
                                 {
@@ -37,6 +38,7 @@ const PokemonInfo = ({ data }) => {
 
                             <div className="base-state">
                             <h2>Stat</h2>
+                                <div className="stat-content">
                                 {
                                     data.stats.map((poke)=>{
                                          return (
@@ -46,7 +48,15 @@ const PokemonInfo = ({ data }) => {
                                          )
                                     })
                                 }
+                                </div>
+                            
+                                
                             </div>
+                            </div>
+                            
+                            
+
+                            
 
                         </>
                     )

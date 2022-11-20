@@ -57,42 +57,9 @@ h2:first-letter {
 
 }
 
-.image:hover {
-    transform: rotateY(45deg);
-    animation: rotateAnimation 3s linear infinite;
-}
 
-@keyframes rotateAnimation {
-    from {
-        transform: rotateY(45deg);
-    }
 
-    to {
-        transform: rotateY(225deg);
-    }
-}
 
-.abilities {
-    width: 30%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1rem;
-    gap: 1rem;
-}
-
-.abilities .group {
-    background-color: #6c706d;
-    color: white;
-    padding: 0.5rem;
-    font-size: 10px;
-    border-radius: 8px;
-}
-
-.base-state {
-    margin-top: 2rem;
-}
 
 .btn-group {
     display: flex;
@@ -135,29 +102,95 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
-nav .input{
+nav .input {
     margin-right: 5%;
     border-radius: 10%;
     display: flex;
 }
 
-nav input{
+nav input {
     margin-right: 5%;
     outline: none;
     border: none;
     height: 100%;
-    
+
 }
 
-nav button{
+nav button {
     border-radius: 10%;
     outline: none;
     border: none;
-    
+
 }
 
 /* navbar ends */
+
+/* pokemonInfo begins*/
+
+.about {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.about h2{
+    align-items: center;
+}
+
+.image:hover {
+    transform: rotateY(45deg);
+    animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotateY(45deg);
+    }
+
+    to {
+        transform: rotateY(225deg);
+    }
+}
+
+.abilities {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    background-color: #ecf1f3;
+    padding: 2%;
+    border-radius: 8px;
+
+}
+
+.abilities .group {
+    background-color: #6c706d;
+    color: white;
+    padding: 0.5rem;
+    font-size: 10px;
+    border-radius: 8px;
+}
+
+.base-state {
+    margin: auto;
+    background-color: #ecf1f3;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+.stat-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+   
+    
+}
+
+
+/* pokemonInfo emds*/
