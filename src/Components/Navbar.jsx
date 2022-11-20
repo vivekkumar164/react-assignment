@@ -10,7 +10,7 @@ const Navbar = ({searchPokeMon}) => {
                 <nav>
                     <h2>PokeMon Library</h2>
                     <div className="input">
-                        <input type="text" onChange={(e)=>setName(e.target.value)} />
+                        <input placeholder='Search by name..' type="text" onChange={(e)=>setName(e.target.value)} />
                         <button disabled={!name} onClick={()=>searchPokeMon(name)}>Search</button>
                     </div>
                     

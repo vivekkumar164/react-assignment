@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Card = ({ pokeMon, load, infoPokemon }) => {
+const Card = ({ pokeMon, loading, infoPokemon }) => {
     return (
 
         <>
 
             {
-                load ? <h1>Loading...</h1> :
+                loading ? <h1>Loading...</h1> :
                     pokeMon.map((item) => {
                         return (
                             <>
